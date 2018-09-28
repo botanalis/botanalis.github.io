@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://botanalis.github.io/"/>
-  <updated>2018-09-28T08:21:45.888Z</updated>
+  <updated>2018-09-28T09:15:28.250Z</updated>
   <id>https://botanalis.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[VueJS][03][基礎篇]-綁定</title>
+    <link href="https://botanalis.github.io/2018/09/28/VueJS-03-%E5%9F%BA%E7%A4%8E%E7%AF%87-%E7%B6%81%E5%AE%9A/"/>
+    <id>https://botanalis.github.io/2018/09/28/VueJS-03-基礎篇-綁定/</id>
+    <published>2018-09-28T08:39:37.000Z</published>
+    <updated>2018-09-28T09:15:28.250Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="單向綁定資料"><a href="#單向綁定資料" class="headerlink" title="單向綁定資料"></a>單向綁定資料</h1><p>使用<code>v-model</code>標籤語法，將html元素與VueJs資料進行Match。</p><h2 id="v-model-語法"><a href="#v-model-語法" class="headerlink" title="v-model 語法"></a>v-model 語法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"DataName"</span> /&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>DataName: 根據VueJs data屬性欄位中宣告之名稱 </p></blockquote><a id="more"></a><h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><p>顯示輸入字串訊息</p><h3 id="網頁Html"><a href="#網頁Html" class="headerlink" title="網頁Html"></a>網頁Html</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>[VueJS][03]v-model 單向資料綁定-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"message"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>input[ &#123;&#123;message&#125;&#125; ] <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            data:&#123;</span></span><br><span class="line"><span class="javascript">                message: <span class="string">'VueJs Model'</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="網頁結果"><a href="#網頁結果" class="headerlink" title="網頁結果"></a>網頁結果</h3><img src="/2018/09/28/VueJS-03-基礎篇-綁定/03_Example_1.gif">]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;單向綁定資料&quot;&gt;&lt;a href=&quot;#單向綁定資料&quot; class=&quot;headerlink&quot; title=&quot;單向綁定資料&quot;&gt;&lt;/a&gt;單向綁定資料&lt;/h1&gt;&lt;p&gt;使用&lt;code&gt;v-model&lt;/code&gt;標籤語法，將html元素與VueJs資料進行Match。&lt;/p&gt;
+&lt;h2 id=&quot;v-model-語法&quot;&gt;&lt;a href=&quot;#v-model-語法&quot; class=&quot;headerlink&quot; title=&quot;v-model 語法&quot;&gt;&lt;/a&gt;v-model 語法&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;v-model&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;DataName&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DataName: 根據VueJs data屬性欄位中宣告之名稱 &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="VueJs" scheme="https://botanalis.github.io/tags/VueJs/"/>
+    
+  </entry>
   
   <entry>
     <title>[VueJS][02][基礎篇]-列表</title>
