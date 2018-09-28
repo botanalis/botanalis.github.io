@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Object 實戰</title>
+  
+  <subtitle>Ｄigit Ｏbjectの01世界未來…</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://botanalis.github.io/"/>
+  <updated>2018-09-28T07:26:41.115Z</updated>
+  <id>https://botanalis.github.io/</id>
+  
+  <author>
+    <name>ChingFeng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Digit Object Blog</title>
+    <link href="https://botanalis.github.io/2018/09/28/Digit-Object-Blog/"/>
+    <id>https://botanalis.github.io/2018/09/28/Digit-Object-Blog/</id>
+    <published>2018-09-28T07:12:54.000Z</published>
+    <updated>2018-09-28T07:26:41.115Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Object-世界"><a href="#Object-世界" class="headerlink" title="Object 世界"></a>Object 世界</h2><p>學習筆記</p><img src="/2018/09/28/Digit-Object-Blog/DigitObjectImage.jpg">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Object-世界&quot;&gt;&lt;a href=&quot;#Object-世界&quot; class=&quot;headerlink&quot; title=&quot;Object 世界&quot;&gt;&lt;/a&gt;Object 世界&lt;/h2&gt;&lt;p&gt;學習筆記&lt;/p&gt;
+&lt;img src=&quot;/2018/09/28/Digit-Objec
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
