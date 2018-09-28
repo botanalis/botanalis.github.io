@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://botanalis.github.io/about/index.html</loc>
+    
+    <lastmod>2018-09-28T10:49:53.518Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://botanalis.github.io/2018/09/28/VueJS-05-%E5%9F%BA%E7%A4%8E%E7%AF%87-%E9%81%8E%E6%BF%BE/</loc>
     
     <lastmod>2018-09-28T10:34:47.423Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://botanalis.github.io/tags/index.html</loc>
     
     <lastmod>2018-09-28T07:25:42.206Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://botanalis.github.io/about/index.html</loc>
-    
-    <lastmod>2018-09-28T06:51:53.016Z</lastmod>
     
   </url>
   
