@@ -110,20 +110,20 @@
 
 
 
-  <meta name="description" content="判斷邏輯使用v-if標籤語法，判斷資料顯示判斷該區塊是否允許動作。 v-if語法12&amp;lt;div v-if=&quot;Boolean&quot;&amp;gt;&amp;lt;/div&amp;gt;  Boolean(布林值)：true(顯示) / false（隱藏）">
+  <meta name="description" content="簡易Html樣板使用v-html標籤語法，替換區塊Html。 v-if語法12&amp;lt;div v-html=&quot;Html Template&quot;&amp;gt;&amp;lt;/div&amp;gt;  Html Template：可以在 Vue data 屬性宣告Html。">
 <meta name="keywords" content="VueJs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[VueJS][08][功能篇]-判斷">
-<meta property="og:url" content="https://botanalis.github.io/2018/10/02/VueJS-08-功能篇-判斷/index.html">
+<meta property="og:title" content="[VueJS][09][功能篇]-內嵌">
+<meta property="og:url" content="https://botanalis.github.io/2018/10/02/VueJS-09-功能篇-內嵌/index.html">
 <meta property="og:site_name" content="Object 實戰">
-<meta property="og:description" content="判斷邏輯使用v-if標籤語法，判斷資料顯示判斷該區塊是否允許動作。 v-if語法12&amp;lt;div v-if=&quot;Boolean&quot;&amp;gt;&amp;lt;/div&amp;gt;  Boolean(布林值)：true(顯示) / false（隱藏）">
+<meta property="og:description" content="簡易Html樣板使用v-html標籤語法，替換區塊Html。 v-if語法12&amp;lt;div v-html=&quot;Html Template&quot;&amp;gt;&amp;lt;/div&amp;gt;  Html Template：可以在 Vue data 屬性宣告Html。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:image" content="https://botanalis.github.io/2018/10/02/VueJS-08-功能篇-判斷/08_Example_1.png">
-<meta property="og:updated_time" content="2018-10-02T06:34:48.781Z">
+<meta property="og:image" content="https://botanalis.github.io/2018/10/02/VueJS-09-功能篇-內嵌/09_Example_1.png">
+<meta property="og:updated_time" content="2018-10-02T08:44:00.199Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[VueJS][08][功能篇]-判斷">
-<meta name="twitter:description" content="判斷邏輯使用v-if標籤語法，判斷資料顯示判斷該區塊是否允許動作。 v-if語法12&amp;lt;div v-if=&quot;Boolean&quot;&amp;gt;&amp;lt;/div&amp;gt;  Boolean(布林值)：true(顯示) / false（隱藏）">
-<meta name="twitter:image" content="https://botanalis.github.io/2018/10/02/VueJS-08-功能篇-判斷/08_Example_1.png">
+<meta name="twitter:title" content="[VueJS][09][功能篇]-內嵌">
+<meta name="twitter:description" content="簡易Html樣板使用v-html標籤語法，替換區塊Html。 v-if語法12&amp;lt;div v-html=&quot;Html Template&quot;&amp;gt;&amp;lt;/div&amp;gt;  Html Template：可以在 Vue data 屬性宣告Html。">
+<meta name="twitter:image" content="https://botanalis.github.io/2018/10/02/VueJS-09-功能篇-內嵌/09_Example_1.png">
 
 
 
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="https://botanalis.github.io/2018/10/02/VueJS-08-功能篇-判斷/"/>
+  <link rel="canonical" href="https://botanalis.github.io/2018/10/02/VueJS-09-功能篇-內嵌/"/>
 
 
 
@@ -142,7 +142,7 @@
   };
 </script>
 
-  <title>[VueJS][08][功能篇]-判斷 | Object 實戰</title>
+  <title>[VueJS][09][功能篇]-內嵌 | Object 實戰</title>
   
 
 
@@ -346,7 +346,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://botanalis.github.io/2018/10/02/VueJS-08-功能篇-判斷/">
+    <link itemprop="mainEntityOfPage" href="https://botanalis.github.io/2018/10/02/VueJS-09-功能篇-內嵌/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ChingFeng">
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">[VueJS][08][功能篇]-判斷
+          <h1 class="post-title" itemprop="name headline">[VueJS][09][功能篇]-內嵌
               
             
           </h1>
@@ -388,7 +388,7 @@
                 
               
 
-              <time title="創建時間：2018-10-02 14:26:08 / 修改時間：14:34:48" itemprop="dateCreated datePublished" datetime="2018-10-02T14:26:08+08:00">2018-10-02</time>
+              <time title="創建時間：2018-10-02 16:23:37 / 修改時間：16:44:00" itemprop="dateCreated datePublished" datetime="2018-10-02T16:23:37+08:00">2018-10-02</time>
             
 
             
@@ -426,18 +426,15 @@
       
 
       
-        <h1 id="判斷邏輯"><a href="#判斷邏輯" class="headerlink" title="判斷邏輯"></a>判斷邏輯</h1><p>使用<code>v-if</code>標籤語法，判斷資料顯示判斷該區塊是否允許動作。</p>
-<h2 id="v-if語法"><a href="#v-if語法" class="headerlink" title="v-if語法"></a>v-if語法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"Boolean"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="簡易Html樣板"><a href="#簡易Html樣板" class="headerlink" title="簡易Html樣板"></a>簡易Html樣板</h1><p>使用<code>v-html</code>標籤語法，替換區塊Html。</p>
+<h2 id="v-if語法"><a href="#v-if語法" class="headerlink" title="v-if語法"></a>v-if語法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-html</span>=<span class="string">"Html Template"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>Boolean(布林值)：true(顯示) / false（隱藏）</p>
+<p>Html Template：可以在 Vue data 屬性宣告Html。</p>
 </blockquote>
 <a id="more"></a>
-<h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><p>顯示<code>&lt;div&gt;</code>標籤區塊</p>
-<blockquote>
-<p>下述顯示 <strong>I’m a ghost! Boo!</strong> 字串。</p>
-</blockquote>
-<h3 id="網頁Html"><a href="#網頁Html" class="headerlink" title="網頁Html"></a>網頁Html</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>[VueJS][08]if-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"isNight"</span>&gt;</span></span><br><span class="line">            I'm a ghost! Boo!</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"!isNight"</span>&gt;</span></span><br><span class="line">            I'm a Night! Boo!</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">       </span></span><br><span class="line"><span class="javascript">        <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            data:&#123;</span></span><br><span class="line"><span class="javascript">                isNight: <span class="literal">true</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="網頁結果"><a href="#網頁結果" class="headerlink" title="網頁結果"></a>網頁結果</h3><img src="/2018/10/02/VueJS-08-功能篇-判斷/08_Example_1.png">
+<h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><p>顯示簡易Html Template。</p>
+<h3 id="網頁Html"><a href="#網頁Html" class="headerlink" title="網頁Html"></a>網頁Html</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>[VueJS][09]html-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-for</span>=<span class="string">"htmlT in htmlText"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-html</span>=<span class="string">"htmlT"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">       </span></span><br><span class="line"><span class="javascript">        <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">            data:&#123;</span></span><br><span class="line"><span class="undefined">                htmlText:[</span></span><br><span class="line"><span class="xml">                    'Dear John,<span class="tag">&lt;<span class="name">br</span>/&gt;</span>thank you for the <span class="tag">&lt;<span class="name">pre</span>&gt;</span>Batman vs Auperman<span class="tag">&lt;/<span class="name">pre</span>&gt;</span>DVD!',</span></span><br><span class="line"><span class="xml">                    'Dear John,<span class="tag">&lt;<span class="name">br</span>/&gt;</span>thank you for <span class="tag">&lt;<span class="name">i</span>&gt;</span>Ghostbusters 3<span class="tag">&lt;/<span class="name">i</span>&gt;</span> !',</span></span><br><span class="line"><span class="xml">                    'Dear John,<span class="tag">&lt;<span class="name">br</span>/&gt;</span>thanks, <span class="tag">&lt;<span class="name">b</span>&gt;</span>Gods of Egypt<span class="tag">&lt;/<span class="name">b</span>&gt;</span> is my new favourite!'</span></span><br><span class="line"><span class="undefined">                ]</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="網頁結果"><a href="#網頁結果" class="headerlink" title="網頁結果"></a>網頁結果</h3><img src="/2018/10/02/VueJS-09-功能篇-內嵌/09_Example_1.png">
       
     </div>
 
@@ -470,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/02/VueJS-07-功能篇-顯示/" rel="next" title="[VueJS][07][功能篇]-顯示">
-                <i class="fa fa-chevron-left"></i> [VueJS][07][功能篇]-顯示
+              <a href="/2018/10/02/VueJS-08-功能篇-判斷/" rel="next" title="[VueJS][08][功能篇]-判斷">
+                <i class="fa fa-chevron-left"></i> [VueJS][08][功能篇]-判斷
               </a>
             
           </div>
@@ -479,10 +476,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/02/VueJS-09-功能篇-內嵌/" rel="prev" title="[VueJS][09][功能篇]-內嵌">
-                [VueJS][09][功能篇]-內嵌 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -616,7 +609,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#判斷邏輯"><span class="nav-number">1.</span> <span class="nav-text">判斷邏輯</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#v-if語法"><span class="nav-number">1.1.</span> <span class="nav-text">v-if語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#範例"><span class="nav-number">1.2.</span> <span class="nav-text">範例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#網頁Html"><span class="nav-number">1.2.1.</span> <span class="nav-text">網頁Html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#網頁結果"><span class="nav-number">1.2.2.</span> <span class="nav-text">網頁結果</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#簡易Html樣板"><span class="nav-number">1.</span> <span class="nav-text">簡易Html樣板</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#v-if語法"><span class="nav-number">1.1.</span> <span class="nav-text">v-if語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#範例"><span class="nav-number">1.2.</span> <span class="nav-text">範例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#網頁Html"><span class="nav-number">1.2.1.</span> <span class="nav-text">網頁Html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#網頁結果"><span class="nav-number">1.2.2.</span> <span class="nav-text">網頁結果</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
