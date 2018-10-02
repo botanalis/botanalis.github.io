@@ -110,19 +110,19 @@
 
 
 
-  <meta name="description" content="單向綁定資料使用v-model標籤語法，將html元素與VueJs資料進行Match。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
+  <meta name="description" content="單向綁定資料使用v-model標籤語法，使Html元素&amp;lt;input&amp;gt;、&amp;lt;select&amp;gt;、&amp;lt;textarea&amp;gt;與components，將VueJs資料進行Match綁定。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
 <meta name="keywords" content="VueJs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[VueJS][03][基礎篇]-綁定">
 <meta property="og:url" content="https://botanalis.github.io/2018/09/28/VueJS-03-基礎篇-綁定/index.html">
 <meta property="og:site_name" content="Object 實戰">
-<meta property="og:description" content="單向綁定資料使用v-model標籤語法，將html元素與VueJs資料進行Match。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
+<meta property="og:description" content="單向綁定資料使用v-model標籤語法，使Html元素&amp;lt;input&amp;gt;、&amp;lt;select&amp;gt;、&amp;lt;textarea&amp;gt;與components，將VueJs資料進行Match綁定。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://botanalis.github.io/2018/09/28/VueJS-03-基礎篇-綁定/03_Example_1.gif">
-<meta property="og:updated_time" content="2018-09-28T09:15:28.250Z">
+<meta property="og:updated_time" content="2018-10-02T11:32:59.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[VueJS][03][基礎篇]-綁定">
-<meta name="twitter:description" content="單向綁定資料使用v-model標籤語法，將html元素與VueJs資料進行Match。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
+<meta name="twitter:description" content="單向綁定資料使用v-model標籤語法，使Html元素&amp;lt;input&amp;gt;、&amp;lt;select&amp;gt;、&amp;lt;textarea&amp;gt;與components，將VueJs資料進行Match綁定。 v-model 語法1&amp;lt;input v-model=&quot;DataName&quot; /&amp;gt;  DataName: 根據VueJs data屬性欄位中宣告之名稱">
 <meta name="twitter:image" content="https://botanalis.github.io/2018/09/28/VueJS-03-基礎篇-綁定/03_Example_1.gif">
 
 
@@ -388,12 +388,24 @@
                 
               
 
-              <time title="創建時間：2018-09-28 16:39:37 / 修改時間：17:15:28" itemprop="dateCreated datePublished" datetime="2018-09-28T16:39:37+08:00">2018-09-28</time>
+              <time title="創建時間：2018-09-28 16:39:37" itemprop="dateCreated datePublished" datetime="2018-09-28T16:39:37+08:00">2018-09-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2018-10-02 19:32:59" itemprop="dateModified" datetime="2018-10-02T19:32:59+08:00">2018-10-02</time>
               
             
           </span>
@@ -426,7 +438,7 @@
       
 
       
-        <h1 id="單向綁定資料"><a href="#單向綁定資料" class="headerlink" title="單向綁定資料"></a>單向綁定資料</h1><p>使用<code>v-model</code>標籤語法，將html元素與VueJs資料進行Match。</p>
+        <h1 id="單向綁定資料"><a href="#單向綁定資料" class="headerlink" title="單向綁定資料"></a>單向綁定資料</h1><p>使用<code>v-model</code>標籤語法，使Html元素<code>&lt;input&gt;</code>、<code>&lt;select&gt;</code>、<code>&lt;textarea&gt;</code>與<code>components</code>，將VueJs資料進行Match綁定。</p>
 <h2 id="v-model-語法"><a href="#v-model-語法" class="headerlink" title="v-model 語法"></a>v-model 語法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"DataName"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>DataName: 根據VueJs data屬性欄位中宣告之名稱 </p>
